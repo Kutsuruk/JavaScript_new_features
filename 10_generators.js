@@ -29,7 +29,7 @@ const string = 'Hello'
 // }
 
 
-const country = {
+/* const country = {
     values: ['Finland', 'Sweden', 'China', 'USA', 'England'],
     [Symbol.iterator]() {
         let i = 0
@@ -48,4 +48,22 @@ const country = {
 
 for(let item of country) {
     console.log(item)
+} */
+
+
+// Generator
+function *gen(num = 4) {
+    for(let i; i < num; i++) {
+        yield i 
+    }
+}
+
+const iter = gen(3)
+console.log(iter.next())
+console.log(iter.next())
+console.log(iter.next())
+console.log(iter.next())
+
+for(let i of gen(4)) {
+    console.log(i)
 }
