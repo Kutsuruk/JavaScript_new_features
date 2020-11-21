@@ -43,8 +43,22 @@ class Programmer extends Person {
 
 let hacker = new Programmer('Jack', 22, 'Frontend')
 
-console.log(hacker)
-console.log(hacker.greet())
-console.log(hacker.job)
-hacker.job = 'Backend'
-console.log(hacker.job)
+// console.log(hacker)
+// console.log(hacker.greet())
+// console.log(hacker.job)
+// hacker.job = 'Backend'
+// console.log(hacker.job)
+
+
+// Static
+class Util {
+    static average(...args) {
+        return args.reduce((acc, i) => acc += i, 0) / args.length
+    }
+}
+
+// const util = new Util()
+// console.log(util.average())
+
+const result = Util.average(1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144)
+console.log(result)
