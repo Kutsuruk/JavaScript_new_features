@@ -21,3 +21,16 @@ console.log(map.values())
 console.log(map.entries()) 
 */
 
+// Set
+const set = new Set([1, 2, 3, 5, 5, 8, 13, 13, 13])
+
+console.log(set)
+console.log(set.size)
+console.log(set.add(21))
+// set.clear()
+set.delete(1)
+console.log(set)
+
+console.log(set.keys())
+console.log(set.values())
+console.log(set.entries())
