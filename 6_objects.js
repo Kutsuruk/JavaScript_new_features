@@ -24,3 +24,15 @@ const person = {
 // console.log(person.toString())
 // console.log(person.print())
 
+// Methods
+const first = {a: 1}
+const second = {b: 2}
+
+// console.log(Object.is(20, 20))
+const obj = Object.assign({}, first, second, {c: 3, d: 4})
+
+console.log(obj)
+console.log(Object.entries(obj))
+console.log(Object.keys(obj))
+console.log(Object.values(obj))
+
