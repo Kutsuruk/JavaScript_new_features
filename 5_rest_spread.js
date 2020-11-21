@@ -13,3 +13,14 @@ function average(...args) {
 // const fib = [1, ...array]
 // console.log(fib)
 
+// Destructuring
+const array  = [1, undefined, 3, 5, 8, 13]
+
+// const a = array[0]
+// const b = array[1]
+// const [a, b = 42, ...c] = array
+// console.log(a, b, c)
+
+// const [a, , c] = array
+// console.log(a, c)
+
